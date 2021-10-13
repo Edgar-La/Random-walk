@@ -12,12 +12,12 @@ from plotter import plotter						#Del script plotter.py importamos la funcion pl
 #########################################################################################################################################################
 #########################################################################################################################################################
 
-N = 1000						#Cantidad de pasos
+N = 100							#Cantidad de pasos
 L = 1 							#Tamaño de paso
 p = .5							#Probabilidad p de obtener un paso +L
 q = 1 - p						#Probabilidad q de obtener un paso -L (esta no se modifica, ya que basta con ajustar el valor de p)
-Bounds = [20, -20]			#Las fronteras deben ser de tipo int para asignar un valor, o None para omitir dicha frontera. Puede ser sola una o ambas
-
+Bounds = [None, None]			#Las fronteras deben ser de tipo int para asignar un valor, o None para omitir dicha frontera. Puede ser sola una o ambas
+								#Ejemplos: Bounds = [20, -20], Bounds = [None, -20], Bounds = [20, None]
 #########################################################################################################################################################
 #########################################################################################################################################################
 
